@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.timeline-container {
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.nav-buttons {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.nav-buttons button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  font-size: 16px;
+  background-color: #2a74da;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background-color: #1d56a6;
+}
+
+.timeline-wrapper {
+  overflow-x: hidden;      /* Oculta el scroll barra */
+  width: 100%;
+}
+
+.timeline {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+  transition: scroll-behavior 0.3s;
+  scroll-behavior: smooth;
+}
+
+.year-block {
+  flex: 0 0 auto;
+  width: 280px;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.year {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.event {
+  margin: 6px 0;
+}
+
+.leyenda {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.leyenda span {
+  margin: 0 8px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.leyenda.politica { background-color: #0074D9; color: white; }
+.leyenda.economia { background-color: #2ECC40; color: white; }
+.leyenda.territorio { background-color: #FF851B; color: white; }
+.leyenda.sociedad { background-color: #FF4136; color: white; }
